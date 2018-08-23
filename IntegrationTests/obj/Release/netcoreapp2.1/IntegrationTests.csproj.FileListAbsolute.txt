@@ -1,5 +1,3 @@
-C:\Users\sh185195\source\repose\TaxFiguresCalculator\IntegrationTests\bin\Release\netcoreapp2.1\TaxFiguresCalculator.MVC.Views.dll
-C:\Users\sh185195\source\repose\TaxFiguresCalculator\IntegrationTests\bin\Release\netcoreapp2.1\TaxFiguresCalculator.MVC.Views.pdb
 C:\Users\sh185195\source\repose\TaxFiguresCalculator\IntegrationTests\bin\Release\netcoreapp2.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
 C:\Users\sh185195\source\repose\TaxFiguresCalculator\IntegrationTests\bin\Release\netcoreapp2.1\xunit.runner.reporters.netcoreapp10.dll
 C:\Users\sh185195\source\repose\TaxFiguresCalculator\IntegrationTests\bin\Release\netcoreapp2.1\xunit.runner.utility.netcoreapp10.dll
@@ -10,12 +8,10 @@ C:\Users\sh185195\source\repose\TaxFiguresCalculator\IntegrationTests\bin\Releas
 C:\Users\sh185195\source\repose\TaxFiguresCalculator\IntegrationTests\bin\Release\netcoreapp2.1\IntegrationTests.pdb
 C:\Users\sh185195\source\repose\TaxFiguresCalculator\IntegrationTests\bin\Release\netcoreapp2.1\TaxFiguresCalculator.Core.dll
 C:\Users\sh185195\source\repose\TaxFiguresCalculator\IntegrationTests\bin\Release\netcoreapp2.1\TaxFiguresCalculator.Infrastructure.dll
-C:\Users\sh185195\source\repose\TaxFiguresCalculator\IntegrationTests\bin\Release\netcoreapp2.1\TaxFiguresCalculator.MVC.dll
 C:\Users\sh185195\source\repose\TaxFiguresCalculator\IntegrationTests\bin\Release\netcoreapp2.1\UnitTests.dll
 C:\Users\sh185195\source\repose\TaxFiguresCalculator\IntegrationTests\bin\Release\netcoreapp2.1\TaxFiguresCalculator.Infrastructure.pdb
 C:\Users\sh185195\source\repose\TaxFiguresCalculator\IntegrationTests\bin\Release\netcoreapp2.1\UnitTests.pdb
 C:\Users\sh185195\source\repose\TaxFiguresCalculator\IntegrationTests\bin\Release\netcoreapp2.1\TaxFiguresCalculator.Core.pdb
-C:\Users\sh185195\source\repose\TaxFiguresCalculator\IntegrationTests\bin\Release\netcoreapp2.1\TaxFiguresCalculator.MVC.pdb
 C:\Users\sh185195\source\repose\TaxFiguresCalculator\IntegrationTests\obj\Release\netcoreapp2.1\IntegrationTests.csprojAssemblyReference.cache
 C:\Users\sh185195\source\repose\TaxFiguresCalculator\IntegrationTests\obj\Release\netcoreapp2.1\IntegrationTests.csproj.CoreCompileInputs.cache
 C:\Users\sh185195\source\repose\TaxFiguresCalculator\IntegrationTests\obj\Release\netcoreapp2.1\IntegrationTests.AssemblyInfoInputs.cache

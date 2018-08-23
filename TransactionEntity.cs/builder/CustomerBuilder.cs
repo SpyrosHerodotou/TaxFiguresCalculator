@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Text;
 using TaxFiguresCalculator.Core.Entities;
-using TaxFiguresCalculator.MVC.ViewModels;
 
 namespace TransactionEntity.cs.builder
 {

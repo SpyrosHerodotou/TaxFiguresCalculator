@@ -1,0 +1,51 @@
+﻿@model TaxFiguresCalculator.MVC.ViewModels.PaginationInfoViewModel
+@using (Html.BeginForm())
+{
+
+    @Html.Hidden("HDName", Model.customerId);
+
+}
+<div class="esh-pager">
+    <div class="container-fluid">
+        <article class="esh-pager-wrapper row">
+            <nav>
+                <div class="col-md-2 col-xs-12">
+                    <a class="btn btn-default @Model.Previous"
+                       id="Previous"
+                       asp-controller="DataManager"
+                       asp-action="Index"
+                       asp-route-customerId="@(Model.customerId)"
+                       asp-route-page="@(Model.ActualPage - 1)"
+                       aria-label="Previous">
+                        Previous
+                    </a>
+                </div>
+
+                <div class="col-md-8 col-xs-12">
+                    <span class="esh-pager-item">
+                        Showing @Model.ItemsPerPage of @Model.TotalItems products - Page @(Model.ActualPage + 1) - @Model.TotalPages
+                    </span>
+                </div>
+
+                <div class="col-md-2 col-xs-12">
+
+                    <a class="btn btn-default"
+                       id="Next"
+                       asp-controller="DataManager"
+                       asp-action="Index"
+                       asp-route-customerId="@(Model.customerId)"
+                       asp-route-page="@(Model.ActualPage + 1)"
+                       aria-label="Next" onclick="HiddenValue();">
+                        Next
+                    </a>
+                </div>
+            </nav>
+        </article>
+    </div>
+</div>
+<script type="text/javascript">
+    function HiddenValue() {
+
+        document.getElementById('HDName').value = @(Model.customerId);
+                }
+</script>

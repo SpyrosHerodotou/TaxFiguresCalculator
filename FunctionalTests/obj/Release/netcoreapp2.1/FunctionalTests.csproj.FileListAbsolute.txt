@@ -20,3 +20,4 @@ C:\Users\sh185195\source\repose\TaxFiguresCalculator\FunctionalTests\obj\Release
 C:\Users\sh185195\source\repose\TaxFiguresCalculator\FunctionalTests\obj\Release\netcoreapp2.1\FunctionalTests.csproj.CopyComplete
 C:\Users\sh185195\source\repose\TaxFiguresCalculator\FunctionalTests\obj\Release\netcoreapp2.1\FunctionalTests.dll
 C:\Users\sh185195\source\repose\TaxFiguresCalculator\FunctionalTests\obj\Release\netcoreapp2.1\FunctionalTests.pdb
+C:\Users\sh185195\source\repose\TaxFiguresCalculator\FunctionalTests\obj\Release\netcoreapp2.1\FunctionalTests.csprojAssemblyReference.cache

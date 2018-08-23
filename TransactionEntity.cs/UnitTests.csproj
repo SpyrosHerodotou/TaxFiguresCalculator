@@ -14,7 +14,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\repos\TaxFiguresCalculator\TaxFiguresCalculator\TaxFiguresCalculator.MVC.csproj" />
     <ProjectReference Include="..\TaxFiguresCalculator.Core\TaxFiguresCalculator.Core.csproj" />
   </ItemGroup>
 

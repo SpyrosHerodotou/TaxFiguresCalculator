@@ -1,7 +1,3 @@
-C:\Users\sh185195\source\repose\TaxFiguresCalculator\FunctionalTests\obj\Debug\netcoreapp2.1\FunctionalTests.csprojAssemblyReference.cache
-C:\Users\sh185195\source\repose\TaxFiguresCalculator\FunctionalTests\obj\Debug\netcoreapp2.1\FunctionalTests.csproj.CoreCompileInputs.cache
-C:\Users\sh185195\source\repose\TaxFiguresCalculator\FunctionalTests\obj\Debug\netcoreapp2.1\FunctionalTests.AssemblyInfoInputs.cache
-C:\Users\sh185195\source\repose\TaxFiguresCalculator\FunctionalTests\obj\Debug\netcoreapp2.1\FunctionalTests.AssemblyInfo.cs
 C:\Users\sh185195\source\repose\TaxFiguresCalculator\FunctionalTests\bin\Debug\netcoreapp2.1\TaxFiguresCalculator.MVC.Views.dll
 C:\Users\sh185195\source\repose\TaxFiguresCalculator\FunctionalTests\bin\Debug\netcoreapp2.1\TaxFiguresCalculator.MVC.Views.pdb
 C:\Users\sh185195\source\repose\TaxFiguresCalculator\FunctionalTests\bin\Debug\netcoreapp2.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
@@ -18,6 +14,10 @@ C:\Users\sh185195\source\repose\TaxFiguresCalculator\FunctionalTests\bin\Debug\n
 C:\Users\sh185195\source\repose\TaxFiguresCalculator\FunctionalTests\bin\Debug\netcoreapp2.1\TaxFiguresCalculator.MVC.pdb
 C:\Users\sh185195\source\repose\TaxFiguresCalculator\FunctionalTests\bin\Debug\netcoreapp2.1\TaxFiguresCalculator.Core.pdb
 C:\Users\sh185195\source\repose\TaxFiguresCalculator\FunctionalTests\bin\Debug\netcoreapp2.1\TaxFiguresCalculator.Infrastructure.pdb
+C:\Users\sh185195\source\repose\TaxFiguresCalculator\FunctionalTests\obj\Debug\netcoreapp2.1\FunctionalTests.csprojAssemblyReference.cache
+C:\Users\sh185195\source\repose\TaxFiguresCalculator\FunctionalTests\obj\Debug\netcoreapp2.1\FunctionalTests.csproj.CoreCompileInputs.cache
+C:\Users\sh185195\source\repose\TaxFiguresCalculator\FunctionalTests\obj\Debug\netcoreapp2.1\FunctionalTests.AssemblyInfoInputs.cache
+C:\Users\sh185195\source\repose\TaxFiguresCalculator\FunctionalTests\obj\Debug\netcoreapp2.1\FunctionalTests.AssemblyInfo.cs
 C:\Users\sh185195\source\repose\TaxFiguresCalculator\FunctionalTests\obj\Debug\netcoreapp2.1\FunctionalTests.csproj.CopyComplete
 C:\Users\sh185195\source\repose\TaxFiguresCalculator\FunctionalTests\obj\Debug\netcoreapp2.1\FunctionalTests.dll
 C:\Users\sh185195\source\repose\TaxFiguresCalculator\FunctionalTests\obj\Debug\netcoreapp2.1\FunctionalTests.pdb

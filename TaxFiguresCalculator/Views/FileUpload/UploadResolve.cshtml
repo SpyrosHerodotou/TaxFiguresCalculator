@@ -1,0 +1,36 @@
+﻿
+@{
+    ViewData["Title"] = "UploadResolve";
+}
+
+<h2></h2>
+
+@model IEnumerable<FileUploadSummaryViewModel>
+
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.FirstOrDefault().RowNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FirstOrDefault().Message)
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.RowNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Message)
+            </td>
+        </tr>
+    }
+
+</table>
+<div>
+    @Html.ActionLink("Back to Upload", "Index", new { customerId = Model.FirstOrDefault().CustomerId }, new { @class = "btn btn-default" })
+</div>

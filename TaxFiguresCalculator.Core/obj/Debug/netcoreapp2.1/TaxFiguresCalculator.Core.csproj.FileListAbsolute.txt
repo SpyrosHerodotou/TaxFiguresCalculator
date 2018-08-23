@@ -1,7 +1,6 @@
 C:\Users\sh185195\source\repose\TaxFiguresCalculator\TaxFiguresCalculator.Core\bin\Debug\netcoreapp2.1\TaxFiguresCalculator.Core.deps.json
 C:\Users\sh185195\source\repose\TaxFiguresCalculator\TaxFiguresCalculator.Core\bin\Debug\netcoreapp2.1\TaxFiguresCalculator.Core.dll
 C:\Users\sh185195\source\repose\TaxFiguresCalculator\TaxFiguresCalculator.Core\bin\Debug\netcoreapp2.1\TaxFiguresCalculator.Core.pdb
-C:\Users\sh185195\source\repose\TaxFiguresCalculator\TaxFiguresCalculator.Core\obj\Debug\netcoreapp2.1\TaxFiguresCalculator.Core.csprojAssemblyReference.cache
 C:\Users\sh185195\source\repose\TaxFiguresCalculator\TaxFiguresCalculator.Core\obj\Debug\netcoreapp2.1\TaxFiguresCalculator.Core.csproj.CoreCompileInputs.cache
 C:\Users\sh185195\source\repose\TaxFiguresCalculator\TaxFiguresCalculator.Core\obj\Debug\netcoreapp2.1\TaxFiguresCalculator.Core.AssemblyInfoInputs.cache
 C:\Users\sh185195\source\repose\TaxFiguresCalculator\TaxFiguresCalculator.Core\obj\Debug\netcoreapp2.1\TaxFiguresCalculator.Core.AssemblyInfo.cs

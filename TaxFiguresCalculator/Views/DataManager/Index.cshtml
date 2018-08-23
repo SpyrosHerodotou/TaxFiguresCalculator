@@ -1,0 +1,61 @@
+﻿@{
+    ViewBag.Title = "Edit/Update Transactions";
+}
+
+@model TaxFiguresCalculator.MVC.ViewModels.TransactionDetailsViewModel
+
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.transactionViewModels.FirstOrDefault().TransactionId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.transactionViewModels.FirstOrDefault().accountName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.transactionViewModels.FirstOrDefault().Description)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.transactionViewModels.FirstOrDefault().Currency)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.transactionViewModels.FirstOrDefault().Amount)
+        </th>
+    </tr>
+
+    @foreach (var item in Model.transactionViewModels)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.TransactionId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.accountName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Currency)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Amount)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.TransactionId }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.TransactionId })
+            </td>
+        </tr>
+    }
+
+</table>
+<div class="container">
+    <partial name="_pagination" for="PaginationInfo" />
+</div>
+<br />
+@Html.ActionLink("Back to HomePage", "Index", new { customerId = Model.transactionViewModels.FirstOrDefault().CustomerId }, new { @class = "btn btn-default" })
+
+<div class="container">
+</div>
+

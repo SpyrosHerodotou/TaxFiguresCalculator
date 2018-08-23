@@ -1,12 +1,12 @@
-C:\Users\sh185195\source\repose\TaxFiguresCalculator\TaxFiguresCalculator.Infrastructure\obj\Debug\netcoreapp2.1\TaxFiguresCalculator.Infrastructure.csprojAssemblyReference.cache
-C:\Users\sh185195\source\repose\TaxFiguresCalculator\TaxFiguresCalculator.Infrastructure\obj\Debug\netcoreapp2.1\TaxFiguresCalculator.Infrastructure.csproj.CoreCompileInputs.cache
-C:\Users\sh185195\source\repose\TaxFiguresCalculator\TaxFiguresCalculator.Infrastructure\obj\Debug\netcoreapp2.1\TaxFiguresCalculator.Infrastructure.AssemblyInfoInputs.cache
-C:\Users\sh185195\source\repose\TaxFiguresCalculator\TaxFiguresCalculator.Infrastructure\obj\Debug\netcoreapp2.1\TaxFiguresCalculator.Infrastructure.AssemblyInfo.cs
 C:\Users\sh185195\source\repose\TaxFiguresCalculator\TaxFiguresCalculator.Infrastructure\bin\Debug\netcoreapp2.1\TaxFiguresCalculator.Infrastructure.deps.json
 C:\Users\sh185195\source\repose\TaxFiguresCalculator\TaxFiguresCalculator.Infrastructure\bin\Debug\netcoreapp2.1\TaxFiguresCalculator.Infrastructure.dll
 C:\Users\sh185195\source\repose\TaxFiguresCalculator\TaxFiguresCalculator.Infrastructure\bin\Debug\netcoreapp2.1\TaxFiguresCalculator.Infrastructure.pdb
 C:\Users\sh185195\source\repose\TaxFiguresCalculator\TaxFiguresCalculator.Infrastructure\bin\Debug\netcoreapp2.1\TaxFiguresCalculator.Core.dll
 C:\Users\sh185195\source\repose\TaxFiguresCalculator\TaxFiguresCalculator.Infrastructure\bin\Debug\netcoreapp2.1\TaxFiguresCalculator.Core.pdb
+C:\Users\sh185195\source\repose\TaxFiguresCalculator\TaxFiguresCalculator.Infrastructure\obj\Debug\netcoreapp2.1\TaxFiguresCalculator.Infrastructure.csprojAssemblyReference.cache
+C:\Users\sh185195\source\repose\TaxFiguresCalculator\TaxFiguresCalculator.Infrastructure\obj\Debug\netcoreapp2.1\TaxFiguresCalculator.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\sh185195\source\repose\TaxFiguresCalculator\TaxFiguresCalculator.Infrastructure\obj\Debug\netcoreapp2.1\TaxFiguresCalculator.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\sh185195\source\repose\TaxFiguresCalculator\TaxFiguresCalculator.Infrastructure\obj\Debug\netcoreapp2.1\TaxFiguresCalculator.Infrastructure.AssemblyInfo.cs
 C:\Users\sh185195\source\repose\TaxFiguresCalculator\TaxFiguresCalculator.Infrastructure\obj\Debug\netcoreapp2.1\TaxFiguresCalculator.Infrastructure.csproj.CopyComplete
 C:\Users\sh185195\source\repose\TaxFiguresCalculator\TaxFiguresCalculator.Infrastructure\obj\Debug\netcoreapp2.1\TaxFiguresCalculator.Infrastructure.dll
 C:\Users\sh185195\source\repose\TaxFiguresCalculator\TaxFiguresCalculator.Infrastructure\obj\Debug\netcoreapp2.1\TaxFiguresCalculator.Infrastructure.pdb

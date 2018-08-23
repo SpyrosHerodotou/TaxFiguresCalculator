@@ -22,7 +22,7 @@ namespace TaxFiguresCalculator.Core.Validations
         {
             get
             {
-                return string.Format("The Account with ID: '{0}' with Description: '{1}' <b><i>does not exist for current Customer</i><b>.",
+                return string.Format("The Account with ID: '{0}' with Description: '{1}' does not exist for current Customer.",
                     Context.AccountId, Context.Description);
             }
         }

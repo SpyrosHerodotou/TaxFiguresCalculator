@@ -24,7 +24,7 @@ namespace TaxFiguresCalculator.Core.Service
         {
             get
             {
-                return string.Format("The Curency Code '{0}' for Account Number: '{2}' with Description '{1}' <b><i>is not a valid Currency Code</b></i>.",
+                return string.Format("The Curency Code '{0}' for Account Number: '{2}' with Description '{1}' is not a valid Currency Code.",
                     Context.CurrencyCode, Context.Description, Context.AccountId);
             }
         }
