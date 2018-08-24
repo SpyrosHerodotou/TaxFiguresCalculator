@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("TaxFiguresCalculator.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyT" +
     "oken=null", "C:\\Users\\sh185195\\source\\repose\\TaxFiguresCalculator\\TaxFiguresCalculator.Infrast" +
     "ructure", "TaxFiguresCalculator.Infrastructure.csproj", "0")]
-[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("TaxFiguresCalculator.MVC, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "C:\\Users\\sh185195\\source\\repose\\TaxFiguresCalculator\\TaxFiguresCalculator", "TaxFiguresCalculator.MVC.csproj", "0")]
+[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("TaxFiguresCalculator.MVC, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "C:\\Users\\sh185195\\source\\repose\\TaxFiguresCalculator\\TaxFiguresCalculator.MVC", "TaxFiguresCalculator.MVC.csproj", "0")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("FunctionalTests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]

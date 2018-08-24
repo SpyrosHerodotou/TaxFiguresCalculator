@@ -11,9 +11,9 @@ C:\Users\sh185195\source\repose\TaxFiguresCalculator\FunctionalTests\bin\Release
 C:\Users\sh185195\source\repose\TaxFiguresCalculator\FunctionalTests\bin\Release\netcoreapp2.1\TaxFiguresCalculator.Core.dll
 C:\Users\sh185195\source\repose\TaxFiguresCalculator\FunctionalTests\bin\Release\netcoreapp2.1\TaxFiguresCalculator.Infrastructure.dll
 C:\Users\sh185195\source\repose\TaxFiguresCalculator\FunctionalTests\bin\Release\netcoreapp2.1\TaxFiguresCalculator.MVC.dll
+C:\Users\sh185195\source\repose\TaxFiguresCalculator\FunctionalTests\bin\Release\netcoreapp2.1\TaxFiguresCalculator.Infrastructure.pdb
 C:\Users\sh185195\source\repose\TaxFiguresCalculator\FunctionalTests\bin\Release\netcoreapp2.1\TaxFiguresCalculator.MVC.pdb
 C:\Users\sh185195\source\repose\TaxFiguresCalculator\FunctionalTests\bin\Release\netcoreapp2.1\TaxFiguresCalculator.Core.pdb
-C:\Users\sh185195\source\repose\TaxFiguresCalculator\FunctionalTests\bin\Release\netcoreapp2.1\TaxFiguresCalculator.Infrastructure.pdb
 C:\Users\sh185195\source\repose\TaxFiguresCalculator\FunctionalTests\obj\Release\netcoreapp2.1\FunctionalTests.csprojAssemblyReference.cache
 C:\Users\sh185195\source\repose\TaxFiguresCalculator\FunctionalTests\obj\Release\netcoreapp2.1\FunctionalTests.csproj.CoreCompileInputs.cache
 C:\Users\sh185195\source\repose\TaxFiguresCalculator\FunctionalTests\obj\Release\netcoreapp2.1\FunctionalTests.AssemblyInfoInputs.cache

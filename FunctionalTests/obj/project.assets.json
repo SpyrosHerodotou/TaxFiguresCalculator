@@ -10636,8 +10636,8 @@
     },
     "TaxFiguresCalculator.MVC/1.0.0": {
       "type": "project",
-      "path": "../TaxFiguresCalculator/TaxFiguresCalculator.MVC.csproj",
-      "msbuildProject": "../TaxFiguresCalculator/TaxFiguresCalculator.MVC.csproj"
+      "path": "../TaxFiguresCalculator.MVC/TaxFiguresCalculator.MVC.csproj",
+      "msbuildProject": "../TaxFiguresCalculator.MVC/TaxFiguresCalculator.MVC.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -10646,6 +10646,7 @@
       "Microsoft.EntityFrameworkCore >= 2.1.2",
       "Microsoft.NET.Test.Sdk >= 15.7.0",
       "Microsoft.NETCore.App >= 2.1.0",
+      "TaxFiguresCalculator.Infrastructure >= 1.0.0",
       "TaxFiguresCalculator.MVC >= 1.0.0",
       "xunit >= 2.3.1",
       "xunit.runner.visualstudio >= 2.3.1"
@@ -10681,8 +10682,11 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\Users\\sh185195\\source\\repose\\TaxFiguresCalculator\\TaxFiguresCalculator\\TaxFiguresCalculator.MVC.csproj": {
-              "projectPath": "C:\\Users\\sh185195\\source\\repose\\TaxFiguresCalculator\\TaxFiguresCalculator\\TaxFiguresCalculator.MVC.csproj"
+            "C:\\Users\\sh185195\\source\\repose\\TaxFiguresCalculator\\TaxFiguresCalculator.Infrastructure\\TaxFiguresCalculator.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\sh185195\\source\\repose\\TaxFiguresCalculator\\TaxFiguresCalculator.Infrastructure\\TaxFiguresCalculator.Infrastructure.csproj"
+            },
+            "C:\\Users\\sh185195\\source\\repose\\TaxFiguresCalculator\\TaxFiguresCalculator.MVC\\TaxFiguresCalculator.MVC.csproj": {
+              "projectPath": "C:\\Users\\sh185195\\source\\repose\\TaxFiguresCalculator\\TaxFiguresCalculator.MVC\\TaxFiguresCalculator.MVC.csproj"
             }
           }
         }

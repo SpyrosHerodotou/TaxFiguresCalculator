@@ -1,6 +1,7 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.Extensions.Configuration;
 using TaxFiguresCalculator.Core.Entities;
 
 namespace TaxFiguresCalculator.Infrastracture.DataAccess
@@ -24,7 +25,7 @@ namespace TaxFiguresCalculator.Infrastracture.DataAccess
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Server=WCYSH185195-U9B;Database=Tax_Figures_Calculator;User Id=sa; Password=admin");
+                optionsBuilder.UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=Tax_Figures_Calculator;User Id = sa; Password = admin");
             }
         }
 

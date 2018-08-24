@@ -1,0 +1,67 @@
+﻿@{
+    ViewData["Title"] = "Customer Page";
+}
+@model TaxFiguresCalculator.MVC.ViewModels.CustomerIndexViewModel
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <br />
+                <h1>Transactions Processing Portal</h1>
+                <br />
+                <br />
+                <h3>The Transactions Page gives you the ability to upload and edit/delete Transaction data per Customer.
+                </h3>
+                <br />
+                <br />
+                <br />
+
+                <br />
+                <br />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12"> <h5> Please select a Customer from the Dropdown Menu and Proceed with processing your Transactions.</h5></div>
+        </div>
+        <br />
+        <div class="row">
+                    <div class="col-6">
+                        <form asp-action="Index" asp-controller="TransactionsPortalController" method="post">
+                            <label class="label-primary" data-title="Customers">
+
+                                <select asp-validation-for="CustomerId" asp-items="@Model.Customers" id="CustomersList" onchange="HiddenValue(this)" class="btn btn-secondary dropdown-toggle"></select>
+                            </label>
+                        </form>
+                        <br>
+                        <br>
+                    </div>
+                    <div class="col-6">
+                        <form asp-controller="DataManager" asp-action="Index">
+                            <input class="btn btn-primary" type="submit" value="View/Edit Transaction" />
+                            @using (Html.BeginForm())
+                            {
+                                @Html.Hidden("CustomerIdForData", "0")
+                            }
+                        </form>
+                        <br />
+                        <form asp-controller="FileUpload" asp-action="Index">
+                            <input class="btn btn-primary" type="submit" value="Upload Transactions" />
+                            @using (Html.BeginForm())
+                            {
+                                @Html.Hidden("CustomerIdForUpload", "0")
+                            }
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script type="text/javascript">
+    function HiddenValue(hidden) {
+
+        document.getElementById('CustomerIdForData').value = hidden.value;
+        document.getElementById('CustomerIdForUpload').value = hidden.value;
+
+    }
+</script>

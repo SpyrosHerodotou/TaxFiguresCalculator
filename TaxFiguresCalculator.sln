@@ -17,7 +17,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FunctionalTests", "Function
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IntegrationTests", "IntegrationTests\IntegrationTests.csproj", "{1E7FE0EE-0485-46C1-9CCC-7A51FB4BDC25}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaxFiguresCalculator.MVC", "TaxFiguresCalculator\TaxFiguresCalculator.MVC.csproj", "{A9221EEE-2C71-4E21-8FE5-DE8A28F946ED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaxFiguresCalculator.MVC", "TaxFiguresCalculator.MVC\TaxFiguresCalculator.MVC.csproj", "{A9221EEE-2C71-4E21-8FE5-DE8A28F946ED}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

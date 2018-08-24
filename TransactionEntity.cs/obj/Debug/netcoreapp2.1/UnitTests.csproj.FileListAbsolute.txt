@@ -14,3 +14,4 @@ C:\Users\sh185195\source\repose\TaxFiguresCalculator\TransactionEntity.cs\obj\De
 C:\Users\sh185195\source\repose\TaxFiguresCalculator\TransactionEntity.cs\obj\Debug\netcoreapp2.1\UnitTests.csproj.CopyComplete
 C:\Users\sh185195\source\repose\TaxFiguresCalculator\TransactionEntity.cs\obj\Debug\netcoreapp2.1\UnitTests.dll
 C:\Users\sh185195\source\repose\TaxFiguresCalculator\TransactionEntity.cs\obj\Debug\netcoreapp2.1\UnitTests.pdb
+C:\Users\sh185195\source\repose\TaxFiguresCalculator\TransactionEntity.cs\obj\Debug\netcoreapp2.1\UnitTests.csprojAssemblyReference.cache
