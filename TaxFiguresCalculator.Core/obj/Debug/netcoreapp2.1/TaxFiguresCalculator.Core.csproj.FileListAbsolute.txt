@@ -6,3 +6,4 @@ C:\Users\sh185195\source\repose\TaxFiguresCalculator\TaxFiguresCalculator.Core\o
 C:\Users\sh185195\source\repose\TaxFiguresCalculator\TaxFiguresCalculator.Core\obj\Debug\netcoreapp2.1\TaxFiguresCalculator.Core.AssemblyInfo.cs
 C:\Users\sh185195\source\repose\TaxFiguresCalculator\TaxFiguresCalculator.Core\obj\Debug\netcoreapp2.1\TaxFiguresCalculator.Core.dll
 C:\Users\sh185195\source\repose\TaxFiguresCalculator\TaxFiguresCalculator.Core\obj\Debug\netcoreapp2.1\TaxFiguresCalculator.Core.pdb
+C:\Users\sh185195\source\repose\TaxFiguresCalculator\TaxFiguresCalculator.Core\obj\Debug\netcoreapp2.1\TaxFiguresCalculator.Core.csprojAssemblyReference.cache

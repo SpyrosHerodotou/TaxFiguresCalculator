@@ -19,47 +19,55 @@ namespace TaxFiguresCalculator.MVC.Controllers
 {
     public class FileUploadController : Controller
     {
-        private readonly ICustomerService _customerService;
+        private readonly ICustomerService _CustomerService;
         private IHostingEnvironment _hostingEnvironment;
         private readonly IFileUploadService _fileUploadService;
-        private readonly IRepository<Customer> _customerrepository;
+        private readonly IRepository<Customer> _Customerrepository;
 
-        private static int _customerId;
-        public IActionResult Index(IFormCollection formcollection, int customerId)
+        private static int _CustomerId;
+        public IActionResult Index(IFormCollection formcollection, int CustomerId)
         {
             if (formcollection["CustomerIdForUpload"].ToString() != "")
             {
-                customerId = Convert.ToInt32(formcollection["CustomerIdForUpload"]);
+                CustomerId = Convert.ToInt32(formcollection["CustomerIdForUpload"]);
             }
-            _customerId = customerId;
-            var customers = _customerrepository.ListAll();
-            if (!customers.Any(x => x.Id == customerId))
+            _CustomerId = CustomerId;
+            var Customers = _Customerrepository.ListAll();
+            if (!Customers.Any(x => x.Id == CustomerId))
             {
-                return RedirectToAction("Index", "Customer");
+                return RedirectToAction("Index", "TransactionPortal");
             }
-            CustomerIndexViewModel customerIndexViewModel = new CustomerIndexViewModel()
+            CustomerIndexViewModel CustomerIndexViewModel = new CustomerIndexViewModel()
             {
                 CustomerId = formcollection["CustomerIdForUpload"]
-        };
-            return View("Index", customerIndexViewModel);
+            };
+            return View("Index", CustomerIndexViewModel);
         }
         public FileUploadController(IFileUploadService fileUploadService,
-            IRepository<Customer> customerrepository)
+            IRepository<Customer> Customerrepository)
         {
             _fileUploadService = fileUploadService;
-            _customerrepository = customerrepository;
+            _Customerrepository = Customerrepository;
         }
+
+
+        /// <summary>
+        /// Upload Streaming Controller Action. Disabling form binding and reading stream.
+        /// Dependency Injection for FileUploadService for Constructing/Validating/Submitting valid Transaction
+        /// Data on DB.
+        /// </summary>
+        /// <returns></returns>
         [HttpPost]
         [DisableFormValueModelBindingAttribute]
         public async Task<IActionResult> UploadStreamingFile()
         {
-            int CustomerId = _customerId;
+            int CustomerId = _CustomerId;
             if (!ModelState.IsValid)
             {
-                RedirectToAction("Index", new { customerId = CustomerId });
+                RedirectToAction("Index", new { CustomerId = CustomerId });
             }
             IEnumerable<FileUploadSummaryViewModel> fileUploadSummaries;
-            
+
             // full path to file in temp location
             var filePath = Path.GetTempFileName();
             try
@@ -69,12 +77,12 @@ namespace TaxFiguresCalculator.MVC.Controllers
                     await FileUploadHelper.StreamFile(Request, stream);
                 }
 
-                var viewModel = await _fileUploadService.UploadFiles(filePath, CustomerId);
+                var viewModel = await _fileUploadService.ValidateAndSaveTransactions(filePath, CustomerId);
                 fileUploadSummaries = viewModel.Select(i => new FileUploadSummaryViewModel()
                 {
                     RowNumber = i.RowNumber,
                     Message = i.Message,
-                    CustomerId = _customerId
+                    CustomerId = _CustomerId
 
                 }).ToList();
                 if (fileUploadSummaries.Count() == 0)
@@ -84,15 +92,17 @@ namespace TaxFiguresCalculator.MVC.Controllers
                     {
                         RowNumber = "",
                         Message = "All Transactions Have Been Successfully Imported!",
-                        CustomerId = _customerId
+                        CustomerId = _CustomerId
                     });
                     fileUploadSummaries = fileUploadSummariesList;
                 }
-            }catch(Exception ex)
-            {
-                return RedirectToAction("Index", "FileUpload", new { customerId = CustomerId });
             }
-            return View("UploadResolve",fileUploadSummaries);
+            catch (Exception ex)
+            {
+                return RedirectToAction("Index", "FileUpload", new { CustomerId = CustomerId });
+            }
+
+            return View("UploadResolve", fileUploadSummaries);
         }
     }
 }

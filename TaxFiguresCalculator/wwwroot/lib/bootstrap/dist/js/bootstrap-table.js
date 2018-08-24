@@ -145,7 +145,7 @@
             w2 = inner[0].offsetWidth;
 
             if (w1 === w2) {
-                w2 = outer[0].clientWidth;
+                w2 = outer[0].CustomerWidth;
             }
 
             outer.remove();
@@ -352,7 +352,7 @@
         pagination: false,
         onlyInfoPagination: false,
         paginationLoop: true,
-        sidePagination: 'client', // client or server
+        sidePagination: 'Customer', // Customer or server
         totalRows: 0, // server side need to set
         pageNumber: 1,
         pageSize: 10,
@@ -1310,7 +1310,7 @@
         this.options.pageNumber = 1;
         this.initSearch();
         if (event.firedByInitSearchText) {
-            if (this.options.sidePagination === 'client') {
+            if (this.options.sidePagination === 'Customer') {
                 this.updatePagination();
             }
         } else {
@@ -2242,8 +2242,8 @@
         }
         fixedBody = this.$tableBody.get(0);
 
-        scrollWidth = fixedBody.scrollWidth > fixedBody.clientWidth &&
-        fixedBody.scrollHeight > fixedBody.clientHeight + this.$header.outerHeight() ?
+        scrollWidth = fixedBody.scrollWidth > fixedBody.CustomerWidth &&
+        fixedBody.scrollHeight > fixedBody.CustomerHeight + this.$header.outerHeight() ?
             getScrollBarWidth() : 0;
 
         this.$el.css('margin-top', -this.$header.outerHeight());

@@ -24,7 +24,7 @@ namespace FunctionalTests
             var response = await Client.GetAsync("/api/TransactionDetails/Index");
             response.EnsureSuccessStatusCode();
             var stringResponse = await response.Content.ReadAsStringAsync();
-            var model = JsonConvert.DeserializeObject<TransactionDetailsViewModel>(stringResponse);
+            var model = JsonConvert.DeserializeObject<TransactionsDataViewModel>(stringResponse);
 
             Assert.Equal(10, model.transactionViewModels.Count());
         }
@@ -35,7 +35,7 @@ namespace FunctionalTests
             var response = await Client.GetAsync("/api/TransactionDetails/Index?page=1");
             response.EnsureSuccessStatusCode();
             var stringResponse = await response.Content.ReadAsStringAsync();
-            var model = JsonConvert.DeserializeObject<TransactionDetailsViewModel>(stringResponse);
+            var model = JsonConvert.DeserializeObject<TransactionsDataViewModel>(stringResponse);
 
             Assert.Equal(2, model.transactionViewModels.Count());
         }

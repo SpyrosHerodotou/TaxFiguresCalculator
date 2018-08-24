@@ -10,6 +10,7 @@ using TaxFiguresCalculator.Core.Interfaces;
 using TaxFiguresCalculator.Core.Repositories;
 using TaxFiguresCalculator.Core.Services;
 using TaxFiguresCalculator.Infrastracture.DataAccess;
+using TaxFiguresCalculator.Infrastructure.DataAccess;
 using TaxFiguresCalculator.MVC.Filters;
 using TaxFiguresCalculator.MVC.Interfaces;
 using TaxFiguresCalculator.MVC.Services;
@@ -58,6 +59,8 @@ namespace TaxFiguresCalculator
             services.AddScoped<IFileUploadService, FileUploaderService>();
             services.AddScoped<IDataManagerViewService, DataManagerViewService>();
             services.AddScoped<IAccountRepository, AccountRepository>();
+            services.AddScoped<Core.Repositories.ITransactionRepository,TransactionRepository>();
+
             services.AddMvc(options =>
             {
                 options.Filters.Add(typeof(DisableFormValueModelBindingAttribute));
@@ -92,14 +95,14 @@ namespace TaxFiguresCalculator
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Customer}/{action=Index}/{id?}");
+                    template: "{controller=TransactionsPortal}/{action=Index}/{id?}");
             });
-            app.UseMvc(routes =>
-            {
-                routes.MapRoute(
-                    name: "Edit",
-                    template: "{controller=DataManager}/{action=Edit}/{transactionId?}");
-            });
+            //app.UseMvc(routes =>
+            //{
+            //    routes.MapRoute(
+            //        name: "Edit",
+            //        template: "{controller=DataManager}/{action=Edit}/{transactionId?}");
+            //});
         }
     }
 }

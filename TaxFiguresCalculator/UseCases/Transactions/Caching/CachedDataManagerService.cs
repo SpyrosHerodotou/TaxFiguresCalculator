@@ -24,16 +24,27 @@ namespace TaxFiguresCalculator.MVC.Services
             _dataManagerViewService = dataManagerViewservice;
         }
 
-        public async Task<TransactionDetailsViewModel> GetTransactionsByCustomerAsync(int customerId, int pageIndex, int itemsPage)
+        /// <summary>
+        /// Utilisation of IMemoryCache for Retrieval of large Transaction Data
+        /// </summary>
+        /// <param name="CustomerId"></param>
+        /// <param name="pageIndex"></param>
+        /// <param name="itemsPage"></param>
+        /// <returns></returns>
+        public async Task<TransactionsDataViewModel> GetTransactionsByCustomerAsync(int CustomerId, int pageIndex, int itemsPage)
         {
             string cacheKey = String.Format(_itemsKeyTemplate, pageIndex, itemsPage);
             return await _cache.GetOrCreateAsync(cacheKey, async entry =>
             {
                 entry.SlidingExpiration = _defaultCacheDuration;
-                return await _dataManagerViewService.GetTransactionsByCustomerAsync(customerId, pageIndex, itemsPage);
+                return await _dataManagerViewService.GetTransactionsByCustomerAsync(CustomerId, pageIndex, itemsPage);
             });
         }
-
+        /// <summary>
+        /// Utilisation of IMemoryCache for Transcation View Model
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         public TransactionViewModel GetTransactionViewModel(int id)
         {
             string cacheKey = String.Format(_itemsKeyTemplate, id);

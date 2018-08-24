@@ -5,36 +5,36 @@ using TaxFiguresCalculator.Core.Entities;
 
 namespace TransactionEntity.cs.builder
 {
-    public class CustomerBuilder
+    public class clientBuilder
     {
-        private Customer _customers;
-        public long TestCustomerIdUnit => 3;
-        public string TestCustomerNameUnit => "SpyrosTest";
-        public string TestCustomerSurnameUnit => "HerodotouTest";
-        public string TestCustomerTelephoneUnit => "0034987323";
-        public string TestCustomerEmailUnit => "spyrosherod@gmail.com";
+        private Customer _clients;
+        public long TestclientIdUnit => 3;
+        public string TestclientNameUnit => "SpyrosTest";
+        public string TestclientSurnameUnit => "HerodotouTest";
+        public string TestclientTelephoneUnit => "0034987323";
+        public string TestclientEmailUnit => "spyrosherod@gmail.com";
 
-        public CustomerBuilder()
+        public clientBuilder()
         {
-            _customers = WithDefaultValues();
+            _clients = WithDefaultValues();
         }
 
         public Customer Build()
         {
-            return _customers;
+            return _clients;
         }
 
         public Customer WithDefaultValues()
         {
 
-            _customers = new Customer();
-            _customers.Id = TestCustomerIdUnit;
-            _customers.Name = TestCustomerNameUnit;
-            _customers.Surname = TestCustomerSurnameUnit;
-            _customers.EmailAddress = TestCustomerEmailUnit;
-            _customers.Telephone = TestCustomerTelephoneUnit;
-            _customers.Accounts = new List<Account>() { new AccountBuilder().WithDefaultValues() };
-            return _customers;
+            _clients = new Customer();
+            _clients.Id = TestclientIdUnit;
+            _clients.Name = TestclientNameUnit;
+            _clients.Surname = TestclientSurnameUnit;
+            _clients.EmailAddress = TestclientEmailUnit;
+            _clients.Telephone = TestclientTelephoneUnit;
+            _clients.Accounts = new List<Account>() { new AccountBuilder().WithDefaultValues() };
+            return _clients;
         }
 
     }

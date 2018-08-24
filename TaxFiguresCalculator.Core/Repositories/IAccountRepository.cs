@@ -13,7 +13,8 @@ namespace TaxFiguresCalculator.Core.Repositories
         Customer GetByIdWithAccounts(int id);
         Task<List<Account>> GetByIdWithAccountsAsync(int id);
         Account GetAccountByIdWithTransactions();
-       Task<Account> GetAccountByIdWithTransactionsAsync();
+        Account GetAccountById(string id);
+        Task<Account> GetAccountByIdWithTransactionsAsync();
         Task<List<Account>> GetAccountsByCustomer(int id);
 
     }

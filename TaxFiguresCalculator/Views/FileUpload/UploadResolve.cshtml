@@ -32,5 +32,5 @@
 
 </table>
 <div>
-    @Html.ActionLink("Back to Upload", "Index", new { customerId = Model.FirstOrDefault().CustomerId }, new { @class = "btn btn-default" })
+    @Html.ActionLink("Back to Upload", "Index","FileUpload", new { CustomerId = Model.FirstOrDefault().CustomerId}, new { @class = "btn btn-default" })
 </div>

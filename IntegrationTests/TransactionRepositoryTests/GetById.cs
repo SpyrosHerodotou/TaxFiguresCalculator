@@ -18,30 +18,32 @@ namespace Microsoft.eShopWeb.IntegrationTests.Repositories.OrderRepositoryTests
         {
             private readonly Tax_Figures_CalculatorContext _Figures_CalculatorContext;
             private readonly TaxFiguresCalculator.Core.Repositories.ITransactionRepository _transactionRepository;
-            private CustomerBuilder customerBuilder { get; } = new CustomerBuilder();
+            private clientBuilder clientBuilder { get; } = new clientBuilder();
             private readonly ITestOutputHelper _output;
+
             public GetById(ITestOutputHelper output)
             {
+                ///Set Server To DB
                 _output = output;
                 var dbOptions = new DbContextOptionsBuilder<Tax_Figures_CalculatorContext>()
                     .UseSqlServer("Server=WCYSH185195-U9B; Database=Tax_Figures_Calculator;User Id = sa; Password = admin")
                     .Options;
                 _Figures_CalculatorContext = new Tax_Figures_CalculatorContext(dbOptions);
-                _transactionRepository = new TaxFiguresCalculator.Infrastructure.DataAccess.ITransactionRepository(_Figures_CalculatorContext);
+                _transactionRepository = new TaxFiguresCalculator.Infrastructure.DataAccess.TransactionRepository(_Figures_CalculatorContext);
             }
 
             [Fact]
             public void GetExistingTransaction()
             {
-                var existingTransaction = customerBuilder.WithDefaultValues().Accounts.FirstOrDefault().Transactions.FirstOrDefault();
+                var existingTransaction = clientBuilder.WithDefaultValues().Accounts.FirstOrDefault().Transactions.FirstOrDefault();
                 _Figures_CalculatorContext.Transaction.Add(existingTransaction);
                 _Figures_CalculatorContext.SaveChanges();
                 long transactionId = existingTransaction.Id;
                 string accountId = existingTransaction.AccountId;
-                _output.WriteLine($"OrderId: {existingTransaction}");
+                _output.WriteLine($"TransactionID: {existingTransaction}");
 
-                var customerFromRepo = _transactionRepository.GetByIdComposite(transactionId, accountId);
-                Assert.Equal(existingTransaction.Id, customerFromRepo.Id);
+                var clientFromRepo = _transactionRepository.GetByIdComposite(transactionId, accountId);
+                Assert.Equal(existingTransaction.Id, clientFromRepo.Id);
             }
         }
     }

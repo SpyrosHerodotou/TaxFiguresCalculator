@@ -14,7 +14,7 @@ namespace TaxFiguresCalculator.Core.Entities
 
         [Key]
         public string Id { get; set; }
-        public long CustomerId { get; set; }
+        public long customerId { get; set; }
         public string AccountType { get; set; }
         public string AccountDescription { get; set; }
 

@@ -9,7 +9,7 @@ namespace TaxFiguresCalculator.MVC.Interfaces
 {
     public interface IDataManagerViewService
     {
-        Task<TransactionDetailsViewModel> GetTransactionsByCustomerAsync(int customerId,int pageIndex,int itemsPage);
+        Task<TransactionsDataViewModel> GetTransactionsByCustomerAsync(int CustomerId,int pageIndex,int itemsPage);
         TransactionViewModel GetTransactionViewModel(int id);
     }
 }

@@ -2,7 +2,7 @@
 @using (Html.BeginForm())
 {
 
-    @Html.Hidden("HDName", Model.customerId);
+    @Html.Hidden("HDName", Model.CustomerId);
 
 }
 <div class="esh-pager">
@@ -14,7 +14,7 @@
                        id="Previous"
                        asp-controller="DataManager"
                        asp-action="Index"
-                       asp-route-customerId="@(Model.customerId)"
+                       asp-route-CustomerId="@(Model.CustomerId)"
                        asp-route-page="@(Model.ActualPage - 1)"
                        aria-label="Previous">
                         Previous
@@ -33,7 +33,7 @@
                        id="Next"
                        asp-controller="DataManager"
                        asp-action="Index"
-                       asp-route-customerId="@(Model.customerId)"
+                       asp-route-CustomerId="@(Model.CustomerId)"
                        asp-route-page="@(Model.ActualPage + 1)"
                        aria-label="Next" onclick="HiddenValue();">
                         Next
@@ -46,6 +46,6 @@
 <script type="text/javascript">
     function HiddenValue() {
 
-        document.getElementById('HDName').value = @(Model.customerId);
+        document.getElementById('HDName').value = @(Model.CustomerId);
                 }
 </script>

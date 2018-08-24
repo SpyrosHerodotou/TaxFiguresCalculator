@@ -48,11 +48,11 @@ namespace TaxFiguresCalculator.Infrastracture.DataAccess
                     .HasColumnName("account_type")
                     .HasMaxLength(100);
 
-                entity.Property(e => e.CustomerId).HasColumnName("customer_id");
+                entity.Property(e => e.customerId).HasColumnName("Customer_id");
 
                 entity.HasOne(d => d.Customer)
                     .WithMany(p => p.Accounts)
-                    .HasForeignKey(d => d.CustomerId)
+                    .HasForeignKey(d => d.customerId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK_Accounts_Customers");
             });

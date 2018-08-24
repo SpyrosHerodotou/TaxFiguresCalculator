@@ -15,8 +15,4 @@
     <ProjectReference Include="..\..\..\repose\TaxFiguresCalculator\TaxFiguresCalculator.Infrastructure\TaxFiguresCalculator.Infrastructure.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="UseCases\Customer\Views\" />
-  </ItemGroup>
-
 </Project>
