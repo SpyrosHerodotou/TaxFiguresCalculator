@@ -5,32 +5,36 @@ A simple implementation of a Tax Transaction Data Processing System, made for a 
 
 The TaxFiguresCalculator System was developed on .NET Core 2.1.
 
-It implements foundamentals of Domain Driven Developement (DDD) as well as making use of well structure SOLID Principles.
+It implements foundamentals of Clean Architecture, Domain Driven Developement (DDD) as well as making use of well structured, formatted
+ SOLID Principles.
+
+The Database Engine is based on an Database First Approach, using Entity Framework Core ORM.
+
+Under DBSCript folder you can find the SQL schema create script that will generate the schema for the Database
+and some pre-populated data for 'Customer' and 'Accounts'
 
 
-The Database Engine is based on an Database First Approach, using Entity Framework Core.
+You will need to update the "SQL Server Connection String"  found at the "appsettings.json" file.
 
-Under DBSCript folder you can find the SQL CREATE SCHEMA SCRIPT that will generate the schema for the Database
+I have also provided an IIS publish Deployed app if you would like to plug it and play!
 
 
 ------Table Heirarchy-----
-Client 1-to->many Accounts 1-to->Many Transactions
+Customer 1-to->many Accounts 1-to->Many Transactions
 
 
 
 -----Tax Figures Calculator Database Requirements-----
 
-The 'Client Table' and 'Account' Table Must have populated values.
+The 'Customer Table' and 'Account' Table Must have populated values.
 
 
 ----Tax Figures Calculator User Expirience Requirements----
 
-.All Transaction Tasks on the System occur on behalf of the 'Client' selected upon accesing the system.
+.All Transaction Tasks on the System occur on behalf of the 'Customer' selected upon accesing the system.
 
-.The user must select the Client to which he chooses to Upload/Manage Transactions
+.The user must select the Customer to which he chooses to Upload/Manage Transactions
 while visiting the system.
-
-.The is a Client 
 
 
 -----Upload Excel Requirements----
@@ -38,7 +42,7 @@ while visiting the system.
 .The .xlxs file must have valid headers "Account" / "Description" / "Currency" / "Amount"
 
 .The "Account" Column must correspond to existing Accounts
- on the System that belong to the specific 'Client' the user has selected for 
+ on the System that belong to the specific 'Customer' the user has selected for 
  uploading and managing Transactions.
 
 .Currency Code must be of valid 42017 Currency Code
