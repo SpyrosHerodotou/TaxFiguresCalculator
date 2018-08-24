@@ -65,12 +65,16 @@ This was a shortly devised applications therefore there are certain improvements
 -Adding more persistent View Model Validation for better handling Model-View State.
 -AntiforgeryToken Implementation on the UploadStreaming Functionality for prevention of cross-side scripting --- Implementation developed but not implemented---
 -Documentation and more code commenting for understanding implementation.
+-Futures changes for UI-Clarity: Customer Dropdown should Display "ID" -  "Name-Surname"
 
 -Possible Enhancements would be introducing .NET Core Identity Membership System to add login functionality
 
 
 Overall it was a fun and very interesting task! It's unfortunate that recent events have really took a toll to my initial enthousiasm and 
 eagerness for the overall delivery of the task but hopefully you will enjoy viewing my shortly devised software and review my implementation!!!
+
+
+"Client" and "Customer" references have identical meaning and context.
 
 
 Best Regards,
